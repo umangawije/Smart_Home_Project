@@ -29,3 +29,19 @@
     padding: 32px;
 }
 
+.device_section{
+    margin-top: 16px ;
+}
+
+.devices_section_heading{
+    font-size: 30px;
+}
+
+.device_container{
+   
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
