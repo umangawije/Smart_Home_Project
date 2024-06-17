@@ -5,7 +5,12 @@ import DeviceCard from './componenets/device_card/device_card';
 import profileImg from "./assets/profile.jpeg"
 
 function App() {
-  
+  const devices = [
+    {image:"", name:"Main Light"},
+    {image:"", name:"Ceiling Fan"},
+    {image:"", name:"Night Light"},
+    {image:"", name:"CCTV"},
+  ];
 
   return (
     <div className='App'>
@@ -16,10 +21,10 @@ function App() {
         <div className='device_section'>
           <h1 className='devices_section_heading'>Devices</h1>
           <div className='device_container'>
-            <DeviceCard name="Main Light"/>  {/*react componenet for device card*/}
-            <DeviceCard name="Ceiling Fan"/>
-            <DeviceCard name="Night Light"/>
-            <DeviceCard name="CCTV"/> 
+            {devices.map((device,i) => {
+              return <DeviceCard key={i} image={device.image} name={device.name}/>
+            })}
+            
                   
           </div>
         </div>

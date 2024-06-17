@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@400;500;600;700&display=swap');
 
 .App{
     height: 100vh;
+    padding: 32px;
     background-color: #020406;
     display: grid;
     grid-template-columns: 1fr 3fr 12fr;
@@ -35,6 +35,7 @@
 
 .devices_section_heading{
     font-size: 30px;
+    font-weight: 600;
 }
 
 .device_container{
